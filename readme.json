@@ -1,0 +1,24 @@
+step1:
+
+POST: http://localhost:8080/authenticate
+
+Request:
+
+{
+"username":"foo",
+"password":"foo"
+}
+
+
+Response:
+
+{
+"jwt": "some_token"
+}
+
+step2:
+
+Pass jwt token to below API thru REST client
+
+GET:
+http://localhost:8080/hello
